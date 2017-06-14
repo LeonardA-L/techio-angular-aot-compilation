@@ -1,10 +1,10 @@
 # What's Angular AoT Compilation?
 
-Angular AoT (for Ahead-of-Time) compilation is the new feature added to Angular to significantly boost performance. All the cool kids are doing it. It is a way to improve performance by doing most of the heavy lifting at build time.
+**Angular AoT** (for _Ahead-of-Time_) compilation is the new feature added to Angular to significantly boost performance. All the cool kids are doing it. It is a way to improve performance by doing most of the heavy lifting at build time.
 
-Angular also works without AoT. This is the way AngularJS (version 1.X) works. The compiler works in JIT mode (Just-in-Time), which means it runs on the user machine every time the app is loaded. Every time you run an Angular app, the JIT compiler generates JavaScript for each component to render the app.
+Angular also works without AoT, just like AngularJS (version 1.X) used to. The compiler works in JIT mode (_Just-in-Time_), which means it runs on the user machine _every time_ the app is loaded. Every time you run an Angular app, the JIT compiler generates JavaScript for each component to render the app.
 
-Most of this work can be done at build time, and that's precisely what AoT is about. The compiler runs during build time and performs the compilation of the templates so the app can be rendered instantly at run time, significantly improving performance.
+Most of this work could (and now, can) be done at build time, and that's precisely what AoT is about. The compiler runs during build time and performs the compilation of the templates so the app can be rendered instantly at run time, significantly improving performance.
 It will inline all HTML and CSS for components into the JavaScript to avoid requesting these files separately, thus reducing the number of external Ajax requests.
 
 **Cool side effect number one:** since everything has already been compiled, there is no need to bundle the Angular compiler with your app, which reduces the size of the bundle by *a lot* (the Angular compiler takes roughly half the size of the framework).
@@ -31,7 +31,7 @@ For a more in-depth analyse of the performance of AoT Compilation, read [this aw
 
 # How do I activate AoT?
 
-Now that you really want AoT for your Angular app, let's take a look at how to activate it. We aren't going to talk about how AoT really works under the hood. There are a lot of really good articles on this topic and you might not even care, you just want to use it on your Angular app. If you want to know exactly how AoT Compilation works, take a look at [this great article](http://blog.mgechev.com/2016/08/14/ahead-of-time-compilation-angular-offline-precompilation/).
+Now that you really want AoT for your Angular app, let's take a quick look at how to activate it. We aren't going to talk about how AoT really works under the hood. There are a lot of really good articles on this topic and you might not even care, you just want to use it on your Angular app. If you want to know exactly how AoT Compilation works, take a look at [this great article](http://blog.mgechev.com/2016/08/14/ahead-of-time-compilation-angular-offline-precompilation/).
 
 ## Using angular-cli
 

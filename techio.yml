@@ -1,0 +1,17 @@
+title : Angular template
+
+# Table of content
+plan:
+  - title: Welcome # Set the page title (only displayed if your contribution has several pages)
+    statement: markdowns/welcome.md # Set the file path to the page content
+#  - title: Another Page
+#    statement: markdowns/another-page.md
+
+
+# Settings for your programming projects and the associated Docker images
+projects:
+  angular:
+    root: /angular-project # Set the root path to your angular project
+    buildCommand: "chmod +x build-image.sh && ./build-image.sh" # Run build phase script to install npm dependencies
+    # Set the docker image. This image runs npm install for you on every build
+    runner: codingame/node-angular-runner
